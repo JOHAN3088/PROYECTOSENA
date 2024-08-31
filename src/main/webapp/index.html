@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="url"/>
+        
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- css style -->
+        <style>
+        body{
+            background-image: url(img/inside-farmacia.jpg);
+            background-size: cover;
+            color:#fff;
+        }
+        .login{
+            margin-top: 100px;
+        }
+        .login .card{
+            background: rgb(0, 0, 0, .6);
+        }
+        .login label{
+            font-size: 16px;
+            color:#ccc;
+        }
+        .login input{
+            font-size: 22px !important; 
+            color: #fff;         
+        }
+        .login button:hover{
+            padding: 0px 40px;
+        }
+
+     </style>
+    </head>
+    <body>        
+        <!--
+        <h1>HOLA MUNDO</h1>
+        <form action="LOGIN" method="POST">
+            <input type="text" name="usuario" value="" />
+            <br><br>
+            <input type="password" name="clave" value="" />
+            <br><br>
+            <input type="submit" value="INGRESAR" />
+        </form>
+        -->
+         <!-- login form -->
+    <form action="LOGIN" method="POST">
+     <div class="row login">
+        <div class="col s12 14 offsite-14">
+            <div class="card">
+                <div class="card-action indigo darken-4 white-text">
+                    <h4>Inicio de sesion</h4>
+                </div>
+                <div class="card-content">
+                    <div class="form-field">
+                        <label for="username">username</label>
+                        <input type="text" id="username" name="usuario" value="">
+                    </div><br>
+
+                    <div class="form-field">
+                        <label for="password">password</label>
+                        <input type="password" id="password" name="clave" value="">
+                    </div><br>
+
+                    <div class="form-field">                             
+                        <label for="remember">
+                            <input type="checkbox" id="remember"> 
+                            <span>Remember me</span>
+                        </label>                 
+                    </div><br>
+
+                    <div class="form-field center-align">
+                        <button class="btn-large  indigo darken-4" type="submit">LOGIN</button>
+                        <a class="btn-large indigo darken-4" href="registroEmpleados.jsp" target="_blank">Registro</a>
+                    </div><br>
+
+                </div>
+            </div>          
+        </div>
+     </div>
+    </form>    
+
+
+ <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+ </script>
+
+ <script>
+     document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+});
+ </script> 
+    </body>
+</html>
